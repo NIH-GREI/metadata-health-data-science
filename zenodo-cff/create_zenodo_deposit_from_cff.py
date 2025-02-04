@@ -2,6 +2,8 @@ import argparse
 import json
 import os
 import requests
+import yaml
+
 
 ZENODO_API_URL_SANDBOX = "https://sandbox.zenodo.org/api/"
 ZENODO_API_URL_PROD = "https://zenodo.org/api/"
@@ -89,21 +91,65 @@ def create_zenodo_version(release_data):
 
 def create_zenodo_deposit(zenodo_metadata_json, zipfile):
     #Create Zenodo deposit draft and add metadata
-    zenodo_record = None
-    #Create upload
-    #Create metadata
+    print("Creating new Zenodo deposit")
+    try:
+        # headers = {"Content-Type": "application/json"}
+        r = requests.post(ZENODO_API_URL + 'deposit/depositions', params={'access_token': ZENODO_TOKEN}, json={})
+        r.raise_for_status()
+        if r.status_code == 201:
+            deposition_id = r.json()['id']
+
+        r = requests.put(ZENODO_API_URL + 'deposit/depositions/%s' % deposition_id,
+                        params={'access_token': ZENODO_TOKEN}, data=json.dumps(zenodo_metadata_json), headers=HEADERS)
+        r.raise_for_status()
+        zenodo_record = r.json()
+
+    except requests.exceptions.HTTPError as e:
+        raise SystemExit(e)
+    except requests.exceptions.RequestException as e:
+        raise SystemExit(e)
     return zenodo_record
 
 
- def get_json_from_citation_file():
+def get_json_from_citation_file(citation_file):
     #Convert CFF file to Zenodo JSON format
-    zenodo_metadata_json = None
+    with open(citation_file) as stream:
+        try:
+            citation_data = yaml.safe_load(stream)
+        except yaml.YAMLError as exc:
+            print(exc)
+
+    creators = []
+    for author in citation_data['authors']:
+        creator = {}
+        if "orcid" in author:
+            creator["orcid"] = author["orcid"]
+        if "affiliation" in author:
+            creator["affiliation"] = author["affiliation"]
+        if "given-names" in author:
+            creator["name"] = author["family-names"] + ", " + author["given-names"]
+        else:
+            creator["name"] = author["family-names"]
+        creators.append(creator)
+
+    zenodo_metadata_json = {
+        'metadata': {
+            'title': citation_data['title'],
+            'upload_type': 'poster', # citation_data['type']
+            'description': citation_data['abstract'],
+            'creators': creators,
+            'publication_date': citation_data['date-released']
+        }
+    }
+
+    # TODO: Match https://github.com/zenodo/zenodo-rdm/blob/master/site/zenodo_rdm/github/schemas.py
+
     return zenodo_metadata_json
 
 
 def get_citation_file(zipfile):
     #Find CFF file in zipfile
-    citation_file = None
+    citation_file = zipfile
     return citation_file
 
 
@@ -125,13 +171,13 @@ def main():
         ZENODO_TOKEN = os.environ['ZENODO_TOKEN_SANDBOX']
 
     if os.path.exists(args.zipfile):
-        citation_file = get_citation_file(zipfile)
+        citation_file = get_citation_file(args.zipfile)
         if citation_file:
             zenodo_metadata_json = get_json_from_citation_file(citation_file)
-            zenodo_record = create_zenodo_deposit(zenodo_metadata_json, zipfile)
-            print(f"New Zenodo record created: {zenodo_record}")
+            zenodo_record = create_zenodo_deposit(zenodo_metadata_json, args.zipfile)
+            print(f"New Zenodo record created: {zenodo_record['links']['latest_draft_html']}")
         else:
-            print(f"Could not create Zenodo record. No CITATION.cff file found in zip file {zipfile}.")
+            print(f"Could not create Zenodo record. No CITATION.cff file found in zip file {args.zipfile}.")
 
     else:
         raise Exception("Dump file name, previous version record or release notes could not be found")
