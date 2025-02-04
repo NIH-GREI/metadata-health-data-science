@@ -55,49 +55,71 @@ abstract: '<p>Data dump from the Research Organization Registry (ROR), a communi
   Commons Attribution 4.0 license</a>.</p>'
 authors:
 - family-names: Research Organization Registry
-- affiliation: Research Organization Registry
-  family-names: Buttrick
-  given-names: Adam
-  orcid: 0000-0003-1507-1031
-- affiliation: DataCite
-  family-names: Gould
-  given-names: Maria
-  orcid: 0000-0002-2916-3423
-- affiliation: Czech Academy of Sciences
-  family-names: "Janderov\xE1"
-  given-names: "Kate\u0159ina"
-  orcid: 0000-0003-4945-3951
-- affiliation: Australian Research Data Commons
-  family-names: Liffers
-  given-names: Matthias
-  orcid: 0000-0002-3639-2080
-- affiliation: Argonne National Laboratory
-  family-names: Lundvick
-  given-names: Nicholas
-  orcid: 0000-0002-7614-2449
-- affiliation: DataCite
-  family-names: Krznarich
-  given-names: Elizabeth
-  orcid: 0000-0001-6622-4910
-- affiliation: Office of Scientific and Technical Information
-  family-names: Robinson
-  given-names: Carly
-  orcid: 0000-0002-8523-1478
-- affiliation: American Physical Society
-  family-names: Smith
-  given-names: Arthur P.
-  orcid: 0000-0002-6035-7736
-- affiliation: Crossref
-  family-names: Smulyan
-  given-names: Shayn
-  orcid: 0000-0002-3736-3417
-- affiliation: "Ludwig-Maximilians-Universit\xE4t M\xFCnchen"
-  family-names: Spenger
-  given-names: Martin
-  orcid: 0000-0002-8841-5985
-- affiliation: Educopia Institute
-  family-names: Huang
-  given-names: Jackson
+- affiliation:
+    - name: Research Organization Registry
+    - ror:
+      family-names: Buttrick
+      given-names: Adam
+      orcid: 0000-0003-1507-1031
+- affiliation:
+    - name: DataCite
+    - ror: https://ror.org/04wxnsj81
+      family-names: Gould
+      given-names: Maria
+      orcid: 0000-0002-2916-3423
+- affiliation:
+    - name: Czech Academy of Sciences
+    - ror: https://ror.org/053avzc18
+      family-names: "Janderov\xE1"
+      given-names: "Kate\u0159ina"
+      orcid: 0000-0003-4945-3951
+- affiliation:
+    - name: Australian Research Data Commons
+    - ror: https://ror.org/038sjwq14
+      family-names: Liffers
+      given-names: Matthias
+      orcid: 0000-0002-3639-2080
+- affiliation:
+    - name: Argonne National Laboratory
+    - ror: https://ror.org/05gvnxz63
+      family-names: Lundvick
+      given-names: Nicholas
+      orcid: 0000-0002-7614-2449
+- affiliation:
+    - name: DataCite
+    - ror: https://ror.org/04wxnsj81
+      family-names: Krznarich
+      given-names: Elizabeth
+      orcid: 0000-0001-6622-4910
+- affiliation:
+    - name: Office of Scientific and Technical Information
+    - ror: https://ror.org/031478740
+      family-names: Robinson
+      given-names: Carly
+      orcid: 0000-0002-8523-1478
+- affiliation:
+    - name: American Physical Society
+    - ror: https://ror.org/05j8hg602
+      family-names: Smith
+      given-names: Arthur P.
+      orcid: 0000-0002-6035-7736
+- affiliation:
+    - name: Crossref
+    - ror: https://ror.org/02twcfp32
+      family-names: Smulyan
+      given-names: Shayn
+      orcid: 0000-0002-3736-3417
+- affiliation:
+    -name: "Ludwig-Maximilians-Universit\xE4t M\xFCnchen"
+    - ror: https://ror.org/05591te55
+      family-names: Spenger
+      given-names: Martin
+      orcid: 0000-0002-8841-5985
+- affiliation:
+    - name: Educopia Institute
+    - ror: https://ror.org/03z3dqe20
+      family-names: Huang
+      given-names: Jackson
 cff-version: 1.2.0
 date-released: '2025-01-23'
 doi: 10.5281/zenodo.14728473
