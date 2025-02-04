@@ -1,0 +1,259 @@
+{
+    "stats": {
+        "byResourceType": {
+            "Dataset": {
+                "alternateIdentifier": {
+                    "count": 0,
+                    "instance": 0,
+                    "missing": 865,
+                    "field_status": "Not in schema",
+                    "completeness": 0.0
+                },
+                "identifier": {
+                    "count": 865,
+                    "instance": 865,
+                    "missing": 0,
+                    "field_status": "Mandatory",
+                    "completeness": 1.0
+                },
+                "language": {
+                    "count": 0,
+                    "instance": 0,
+                    "missing": 865,
+                    "field_status": "Not in schema",
+                    "completeness": 0.0
+                },
+                "geoLocations": {
+                    "count": 0,
+                    "instance": 0,
+                    "missing": 865,
+                    "field_status": "Not in schema",
+                    "completeness": 0.0
+                },
+                "rights": {
+                    "count": 865,
+                    "instance": 865,
+                    "missing": 0,
+                    "field_status": "Mandatory",
+                    "completeness": 1.0
+                },
+                "title": {
+                    "count": 865,
+                    "instance": 865,
+                    "missing": 0,
+                    "field_status": "Mandatory",
+                    "completeness": 1.0
+                },
+                "publicationYear": {
+                    "count": 0,
+                    "instance": 0,
+                    "missing": 865,
+                    "field_status": "Not in schema",
+                    "completeness": 0.0
+                },
+                "resourceType": {
+                    "count": 865,
+                    "instance": 865,
+                    "missing": 0,
+                    "field_status": "Mandatory",
+                    "completeness": 1.0
+                },
+                "date": {
+                    "count": 865,
+                    "instance": 865,
+                    "missing": 0,
+                    "field_status": "Not in schema",
+                    "completeness": 1.0
+                },
+                "relatedItems": {
+                    "count": 0,
+                    "instance": 0,
+                    "missing": 865,
+                    "field_status": "Not in schema",
+                    "completeness": 0.0
+                },
+                "formats": {
+                    "count": 0,
+                    "instance": 0,
+                    "missing": 865,
+                    "field_status": "Not in schema",
+                    "completeness": 0.0
+                },
+                "subjects": {
+                    "count": 865,
+                    "instance": 865,
+                    "missing": 0,
+                    "field_status": "Mandatory",
+                    "completeness": 1.0
+                },
+                "version": {
+                    "count": 865,
+                    "instance": 865,
+                    "missing": 0,
+                    "field_status": "Mandatory",
+                    "completeness": 1.0
+                },
+                "relatedIdentifiers": {
+                    "count": 865,
+                    "instance": 1073,
+                    "missing": 0,
+                    "field_status": "Optional",
+                    "completeness": 1.0,
+                    "subfields": {
+                        "relationType": {
+                            "count": 690,
+                            "instance": 1073,
+                            "missing": 175,
+                            "field_status": "Optional",
+                            "completeness": 0.7976878612716763
+                        },
+                        "relatedIdentifierType": {
+                            "count": 690,
+                            "instance": 1073,
+                            "missing": 175,
+                            "field_status": "Optional",
+                            "completeness": 0.7976878612716763
+                        },
+                        "resourceTypeGeneral": {
+                            "count": 0,
+                            "instance": 0,
+                            "missing": 865,
+                            "field_status": "Optional",
+                            "completeness": 0.0
+                        }
+                    }
+                },
+                "contributors": {
+                    "count": 0,
+                    "instance": 0,
+                    "missing": 865,
+                    "field_status": "Not in schema",
+                    "completeness": 0.0
+                },
+                "creators": {
+                    "count": 865,
+                    "instance": 4466,
+                    "missing": 0,
+                    "field_status": "Mandatory",
+                    "completeness": 1.0,
+                    "subfields": {
+                        "affiliation": {
+                            "count": 0,
+                            "instance": 0,
+                            "missing": 865,
+                            "field_status": "Optional",
+                            "completeness": 0.0
+                        },
+                        "nameType": {
+                            "count": 0,
+                            "instance": 0,
+                            "missing": 865,
+                            "field_status": "Not in schema",
+                            "completeness": 0.0
+                        },
+                        "affiliationIdentifier": {
+                            "count": 0,
+                            "instance": 0,
+                            "missing": 865,
+                            "field_status": "Not in schema",
+                            "completeness": 0.0
+                        },
+                        "affiliationIdentifierScheme": {
+                            "count": 0,
+                            "instance": 0,
+                            "missing": 865,
+                            "field_status": "Not in schema",
+                            "completeness": 0.0
+                        },
+                        "nameIdentifierScheme": {
+                            "count": 0,
+                            "instance": 0,
+                            "missing": 865,
+                            "field_status": "Not in schema",
+                            "completeness": 0.0
+                        },
+                        "nameIdentifier": {
+                            "count": 865,
+                            "instance": 4466,
+                            "missing": 0,
+                            "field_status": "Optional",
+                            "completeness": 1.0
+                        }
+                    }
+                },
+                "fundingReferences": {
+                    "count": 865,
+                    "instance": 115,
+                    "missing": 0,
+                    "field_status": "Mandatory",
+                    "completeness": 1.0,
+                    "subfields": {
+                        "awardURI": {
+                            "count": 0,
+                            "instance": 3,
+                            "missing": 865,
+                            "field_status": "Optional",
+                            "completeness": 0.0
+                        },
+                        "awardTitle": {
+                            "count": 102,
+                            "instance": 115,
+                            "missing": 763,
+                            "field_status": "Mandatory",
+                            "completeness": 0.11791907514450867
+                        },
+                        "awardNumber": {
+                            "count": 102,
+                            "instance": 115,
+                            "missing": 763,
+                            "field_status": "Optional",
+                            "completeness": 0.11791907514450867
+                        },
+                        "funderIdentifierType": {
+                            "count": 0,
+                            "instance": 0,
+                            "missing": 865,
+                            "field_status": "Not in schema",
+                            "completeness": 0.0
+                        },
+                        "funderIdentifier": {
+                            "count": 0,
+                            "instance": 0,
+                            "missing": 865,
+                            "field_status": "Not in schema",
+                            "completeness": 0.0
+                        },
+                        "funderNameFunding": {
+                            "count": 102,
+                            "instance": 115,
+                            "missing": 763,
+                            "field_status": "Optional",
+                            "completeness": 0.11791907514450867
+                        }
+                    }
+                },
+                "sizes": {
+                    "count": 865,
+                    "instance": 865,
+                    "missing": 0,
+                    "field_status": "Not in schema",
+                    "completeness": 1.0
+                },
+                "description": {
+                    "count": 865,
+                    "instance": 865,
+                    "missing": 0,
+                    "field_status": "Not in schema",
+                    "completeness": 1.0
+                },
+                "publisher": {
+                    "count": 0,
+                    "instance": 0,
+                    "missing": 865,
+                    "field_status": "Not in schema",
+                    "completeness": 0.0
+                }
+            }
+        }
+    }
+}
