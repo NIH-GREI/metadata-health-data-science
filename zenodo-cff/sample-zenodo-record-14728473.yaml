@@ -1,0 +1,116 @@
+abstract: '<p>Data dump from the Research Organization Registry (ROR), a community-led
+  registry of open identifiers for research organizations.</p>
+
+  <p>Release v1.59 contains ROR IDs and metadata for 113119 research organizations
+  in JSON and CSV format, in schema versions 1 and 2. This includes the addition of
+  1311 new records and metadata updates to 238 existing records.<a href="https://github.com/ror-community/ror-updates/releases/tag/v1.59">
+  See the release notes</a>.</p>
+
+  <h2>Data format</h2>
+
+  <p>Beginning with release v1.45 on 11 April 2024, data releases contain JSON and
+  CSV files formatted according to both <a href="https://github.com/ror-community/ror-schema/blob/master/ror_schema.json">
+  schema v1</a> and <a href="https://github.com/ror-community/ror-schema/blob/schema-v2-1/ror_schema_v2_1.json">schema
+  v2</a>. v2 files have `_schema_v2` appended to the end of the filename, ex v1.45-2024-04-11-ror-data_schema_v2.json.
+  In order to maintain compatibility with previous releases, v1 files have no version
+  information in the filename, ex v1.45-2024-04-11-ror-data.json</p>
+
+  <p>For both versions, the CSV file contains a subset of fields from the JSON file,
+  some of which have been flattened for easier parsing. As ROR records and the ROR
+  schema are maintained in JSON, CSVs are for convenience only. JSON is the format
+  of record.</p>
+
+  <h2>Release versioning</h2>
+
+  <p>Beginning with v1.45 in April 2024, ROR has introduced schema versioning, with
+  files available in <a href="https://github.com/ror-community/ror-schema/blob/master/ror_schema.json">schema
+  v1</a> and <a href="https://github.com/ror-community/ror-schema/blob/schema-v2-1/ror_schema_v2_1.json">schema
+  v2</a>. The ROR API default version, however, remains v1 and will be changed to
+  v2 in April 2025. To align with the API, the data dump major version will remain
+  1 until the API default version is changed to v2. At that time, the data dump major
+  version will be incremented to 2 per below.</p>
+
+  <p>Data releases are versioned as follows:</p>
+
+  <ul>
+
+  <li><strong>Minor versions (ex 1.1, 1.2, 1.3):</strong>&nbsp; Contain changes to
+  data, such as a new records and updates to existing records. No changes to the data
+  model/structure.</li>
+
+  <li><strong>Patch versions (ex 1.0.1):</strong>&nbsp; Used infrequently to correct
+  errors in a release. No changes to the data model/structure.</li>
+
+  <li><strong>Major versions (ex 1.x, 2.x, 3.x):</strong>&nbsp; Contains changes to
+  data model/structure, as well as the data itself. Major versions will be released
+  with significant advance notice.</li>
+
+  </ul>
+
+  <p>For convenience, the date is also include in the release file name, ex: v1.0-2022-03-15-ror-data.zip.</p>
+
+  <p>The ROR data dump is provided under the <a href="https://creativecommons.org/publicdomain/zero/1.0">
+  Creative Commons CC0 Public Domain Dedication</a>. Location data in ROR comes from
+  GeoNames and is licensed under a <a href="https://creativecommons.org/licenses/by/4.0">Creative
+  Commons Attribution 4.0 license</a>.</p>'
+authors:
+- family-names: Research Organization Registry
+- affiliation: Research Organization Registry
+  family-names: Buttrick
+  given-names: Adam
+  orcid: 0000-0003-1507-1031
+- affiliation: DataCite
+  family-names: Gould
+  given-names: Maria
+  orcid: 0000-0002-2916-3423
+- affiliation: Czech Academy of Sciences
+  family-names: "Janderov\xE1"
+  given-names: "Kate\u0159ina"
+  orcid: 0000-0003-4945-3951
+- affiliation: Australian Research Data Commons
+  family-names: Liffers
+  given-names: Matthias
+  orcid: 0000-0002-3639-2080
+- affiliation: Argonne National Laboratory
+  family-names: Lundvick
+  given-names: Nicholas
+  orcid: 0000-0002-7614-2449
+- affiliation: DataCite
+  family-names: Krznarich
+  given-names: Elizabeth
+  orcid: 0000-0001-6622-4910
+- affiliation: Office of Scientific and Technical Information
+  family-names: Robinson
+  given-names: Carly
+  orcid: 0000-0002-8523-1478
+- affiliation: American Physical Society
+  family-names: Smith
+  given-names: Arthur P.
+  orcid: 0000-0002-6035-7736
+- affiliation: Crossref
+  family-names: Smulyan
+  given-names: Shayn
+  orcid: 0000-0002-3736-3417
+- affiliation: "Ludwig-Maximilians-Universit\xE4t M\xFCnchen"
+  family-names: Spenger
+  given-names: Martin
+  orcid: 0000-0002-8841-5985
+- affiliation: Educopia Institute
+  family-names: Huang
+  given-names: Jackson
+cff-version: 1.2.0
+date-released: '2025-01-23'
+doi: 10.5281/zenodo.14728473
+keywords:
+- ROR
+- persistent identifier
+- organization identifier
+- PID
+- affiliation
+- open infrastructure
+- institution identifier
+license:
+- cc0-1.0
+title: ROR Data
+type: dataset
+version: v1.59
