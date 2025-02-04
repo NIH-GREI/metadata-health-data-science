@@ -1,0 +1,1716 @@
+{
+  "access": {
+    "embargo": {
+      "active": false,
+      "reason": null
+    },
+    "files": "public",
+    "record": "public",
+    "status": "open"
+  },
+  "created": "2025-01-23T21:57:14.846015+00:00",
+  "custom_fields": {
+    "legacy:communities": [
+      "ror-data"
+    ]
+  },
+  "deletion_status": {
+    "is_deleted": false,
+    "status": "P"
+  },
+  "files": {
+    "count": 1,
+    "enabled": true,
+    "entries": {
+      "v1.59-2025-01-23-ror-data.zip": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:b80fe408f3614d0ea428ef821124dc49",
+        "ext": "zip",
+        "id": "0dee11e4-cae8-4055-b2e7-d04749eed115",
+        "key": "v1.59-2025-01-23-ror-data.zip",
+        "links": {
+          "content": "https://zenodo.org/api/records/14728473/files/v1.59-2025-01-23-ror-data.zip/content",
+          "self": "https://zenodo.org/api/records/14728473/files/v1.59-2025-01-23-ror-data.zip"
+        },
+        "metadata": {},
+        "mimetype": "application/zip",
+        "size": 57474042,
+        "storage_class": "L"
+      }
+    },
+    "order": [],
+    "total_bytes": 57474042
+  },
+  "id": "14728473",
+  "is_draft": false,
+  "is_published": true,
+  "links": {
+    "access": "https://zenodo.org/api/records/14728473/access",
+    "access_grants": "https://zenodo.org/api/records/14728473/access/grants",
+    "access_links": "https://zenodo.org/api/records/14728473/access/links",
+    "access_request": "https://zenodo.org/api/records/14728473/access/request",
+    "access_users": "https://zenodo.org/api/records/14728473/access/users",
+    "archive": "https://zenodo.org/api/records/14728473/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14728473/media-files-archive",
+    "communities": "https://zenodo.org/api/records/14728473/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14728473/communities-suggestions",
+    "doi": "https://doi.org/10.5281/zenodo.14728473",
+    "draft": "https://zenodo.org/api/records/14728473/draft",
+    "files": "https://zenodo.org/api/records/14728473/files",
+    "latest": "https://zenodo.org/api/records/14728473/versions/latest",
+    "latest_html": "https://zenodo.org/records/14728473/latest",
+    "media_files": "https://zenodo.org/api/records/14728473/media-files",
+    "parent": "https://zenodo.org/api/records/6347574",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6347574",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6347574",
+    "parent_html": "https://zenodo.org/records/6347574",
+    "requests": "https://zenodo.org/api/records/14728473/requests",
+    "reserve_doi": "https://zenodo.org/api/records/14728473/draft/pids/doi",
+    "self": "https://zenodo.org/api/records/14728473",
+    "self_doi": "https://doi.org/10.5281/zenodo.14728473",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14728473",
+    "self_html": "https://zenodo.org/records/14728473",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14728473/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14728473/sequence/default",
+    "versions": "https://zenodo.org/api/records/14728473/versions"
+  },
+  "media_files": {
+    "count": 0,
+    "enabled": false,
+    "entries": {},
+    "order": [],
+    "total_bytes": 0
+  },
+  "metadata": {
+    "contributors": [
+      {
+        "affiliations": [
+          {
+            "name": "Research Organization Registry"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Buttrick",
+          "given_name": "Adam",
+          "identifiers": [
+            {
+              "identifier": "0000-0003-1507-1031",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Buttrick, Adam",
+          "type": "personal"
+        },
+        "role": {
+          "id": "datamanager",
+          "title": {
+            "de": "DatenmanagerIn",
+            "en": "Data manager"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "DataCite"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Gould",
+          "given_name": "Maria",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-2916-3423",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Gould, Maria",
+          "type": "personal"
+        },
+        "role": {
+          "id": "projectmanager",
+          "title": {
+            "de": "ProjektmanagerIn",
+            "en": "Project manager"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Czech Academy of Sciences"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Janderov\u00e1",
+          "given_name": "Kate\u0159ina",
+          "identifiers": [
+            {
+              "identifier": "0000-0003-4945-3951",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Janderov\u00e1, Kate\u0159ina",
+          "type": "personal"
+        },
+        "role": {
+          "id": "datacurator",
+          "title": {
+            "de": "DatenkuratorIn",
+            "en": "Data curator"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Australian Research Data Commons"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Liffers",
+          "given_name": "Matthias",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-3639-2080",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Liffers, Matthias",
+          "type": "personal"
+        },
+        "role": {
+          "id": "datacurator",
+          "title": {
+            "de": "DatenkuratorIn",
+            "en": "Data curator"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Argonne National Laboratory"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Lundvick",
+          "given_name": "Nicholas",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-7614-2449",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Lundvick, Nicholas",
+          "type": "personal"
+        },
+        "role": {
+          "id": "datacurator",
+          "title": {
+            "de": "DatenkuratorIn",
+            "en": "Data curator"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "DataCite"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Krznarich",
+          "given_name": "Elizabeth",
+          "identifiers": [
+            {
+              "identifier": "0000-0001-6622-4910",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Krznarich, Elizabeth",
+          "type": "personal"
+        },
+        "role": {
+          "id": "projectleader",
+          "title": {
+            "de": "ProjektleiterIn",
+            "en": "Project leader"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Office of Scientific and Technical Information"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Robinson",
+          "given_name": "Carly",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-8523-1478",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Robinson, Carly",
+          "type": "personal"
+        },
+        "role": {
+          "id": "datacurator",
+          "title": {
+            "de": "DatenkuratorIn",
+            "en": "Data curator"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "American Physical Society"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Smith",
+          "given_name": "Arthur P.",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-6035-7736",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Smith, Arthur P.",
+          "type": "personal"
+        },
+        "role": {
+          "id": "datacurator",
+          "title": {
+            "de": "DatenkuratorIn",
+            "en": "Data curator"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Crossref"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Smulyan",
+          "given_name": "Shayn",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-3736-3417",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Smulyan, Shayn",
+          "type": "personal"
+        },
+        "role": {
+          "id": "datacurator",
+          "title": {
+            "de": "DatenkuratorIn",
+            "en": "Data curator"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Spenger",
+          "given_name": "Martin",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-8841-5985",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Spenger, Martin",
+          "type": "personal"
+        },
+        "role": {
+          "id": "datacurator",
+          "title": {
+            "de": "DatenkuratorIn",
+            "en": "Data curator"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Educopia Institute"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Huang",
+          "given_name": "Jackson",
+          "name": "Huang, Jackson",
+          "type": "personal"
+        },
+        "role": {
+          "id": "datacurator",
+          "title": {
+            "de": "DatenkuratorIn",
+            "en": "Data curator"
+          }
+        }
+      }
+    ],
+    "creators": [
+      {
+        "person_or_org": {
+          "family_name": "Research Organization Registry",
+          "name": "Research Organization Registry",
+          "type": "personal"
+        }
+      }
+    ],
+    "description": "<p>Data dump from the Research Organization Registry (ROR), a community-led registry of open identifiers for research organizations.</p>\n<p>Release v1.59 contains ROR IDs and metadata for 113119 research organizations in JSON and CSV format, in schema versions 1 and 2. This includes the addition of 1311 new records and metadata updates to 238 existing records.<a href=\"https://github.com/ror-community/ror-updates/releases/tag/v1.59\"> See the release notes</a>.</p>\n<h2>Data format</h2>\n<p>Beginning with release v1.45 on 11 April 2024, data releases contain JSON and CSV files formatted according to both <a href=\"https://github.com/ror-community/ror-schema/blob/master/ror_schema.json\"> schema v1</a> and <a href=\"https://github.com/ror-community/ror-schema/blob/schema-v2-1/ror_schema_v2_1.json\">schema v2</a>. v2 files have `_schema_v2` appended to the end of the filename, ex v1.45-2024-04-11-ror-data_schema_v2.json. In order to maintain compatibility with previous releases, v1 files have no version information in the filename, ex v1.45-2024-04-11-ror-data.json</p>\n<p>For both versions, the CSV file contains a subset of fields from the JSON file, some of which have been flattened for easier parsing. As ROR records and the ROR schema are maintained in JSON, CSVs are for convenience only. JSON is the format of record.</p>\n<h2>Release versioning</h2>\n<p>Beginning with v1.45 in April 2024, ROR has introduced schema versioning, with files available in <a href=\"https://github.com/ror-community/ror-schema/blob/master/ror_schema.json\">schema v1</a> and <a href=\"https://github.com/ror-community/ror-schema/blob/schema-v2-1/ror_schema_v2_1.json\">schema v2</a>. The ROR API default version, however, remains v1 and will be changed to v2 in April 2025. To align with the API, the data dump major version will remain 1 until the API default version is changed to v2. At that time, the data dump major version will be incremented to 2 per below.</p>\n<p>Data releases are versioned as follows:</p>\n<ul>\n<li><strong>Minor versions (ex 1.1, 1.2, 1.3):</strong>&nbsp; Contain changes to data, such as a new records and updates to existing records. No changes to the data model/structure.</li>\n<li><strong>Patch versions (ex 1.0.1):</strong>&nbsp; Used infrequently to correct errors in a release. No changes to the data model/structure.</li>\n<li><strong>Major versions (ex 1.x, 2.x, 3.x):</strong>&nbsp; Contains changes to data model/structure, as well as the data itself. Major versions will be released with significant advance notice.</li>\n</ul>\n<p>For convenience, the date is also include in the release file name, ex: v1.0-2022-03-15-ror-data.zip.</p>\n<p>The ROR data dump is provided under the <a href=\"https://creativecommons.org/publicdomain/zero/1.0\"> Creative Commons CC0 Public Domain Dedication</a>. Location data in ROR comes from GeoNames and is licensed under a <a href=\"https://creativecommons.org/licenses/by/4.0\">Creative Commons Attribution 4.0 license</a>.</p>",
+    "publication_date": "2025-01-23",
+    "publisher": "Zenodo",
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.5534443",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.4929693",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6657125",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6999566",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.7003902",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.7004824",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.7038913",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.7054074",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.7102361",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.7126390",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.7186980.",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.7221476",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.7232744",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.7259450.",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.7325122",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.7374314",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.7387951",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.7407214",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.7448388",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6347575",
+        "relation_type": {
+          "id": "isnewversionof",
+          "title": {
+            "de": "Ist eine neue Version von",
+            "en": "Is new version of"
+          }
+        },
+        "resource_type": {
+          "id": "dataset",
+          "title": {
+            "de": "Datensatz",
+            "en": "Dataset"
+          }
+        },
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "id": "dataset",
+      "title": {
+        "de": "Datensatz",
+        "en": "Dataset"
+      }
+    },
+    "rights": [
+      {
+        "description": {
+          "en": "CC0 waives copyright interest in a work you've created and dedicates it to the world-wide public domain. Use CC0 to opt out of copyright entirely and ensure your work has the widest reach."
+        },
+        "icon": "cc-cc0-icon",
+        "id": "cc0-1.0",
+        "props": {
+          "scheme": "spdx",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
+        },
+        "title": {
+          "en": "Creative Commons Zero v1.0 Universal"
+        }
+      }
+    ],
+    "subjects": [
+      {
+        "subject": "ROR"
+      },
+      {
+        "subject": "persistent identifier"
+      },
+      {
+        "subject": "organization identifier"
+      },
+      {
+        "subject": "PID"
+      },
+      {
+        "subject": "affiliation"
+      },
+      {
+        "subject": "open infrastructure"
+      },
+      {
+        "subject": "institution identifier"
+      }
+    ],
+    "title": "ROR Data",
+    "version": "v1.59"
+  },
+  "parent": {
+    "access": {
+      "grants": [],
+      "links": [],
+      "owned_by": {
+        "user": "73440"
+      },
+      "settings": {
+        "accept_conditions_text": null,
+        "allow_guest_requests": false,
+        "allow_user_requests": false,
+        "secret_link_expiration": 0
+      }
+    },
+    "communities": {
+      "default": "433f41f0-e824-4498-9ae9-87baadcc27c7",
+      "entries": [
+        {
+          "access": {
+            "member_policy": "open",
+            "members_visibility": "public",
+            "record_submission_policy": "open",
+            "review_policy": "open",
+            "visibility": "public"
+          },
+          "children": {
+            "allow": false
+          },
+          "created": "2021-02-05T23:08:05.725975+00:00",
+          "custom_fields": {},
+          "deletion_status": {
+            "is_deleted": false,
+            "status": "P"
+          },
+          "id": "433f41f0-e824-4498-9ae9-87baadcc27c7",
+          "links": {},
+          "metadata": {
+            "curation_policy": "",
+            "description": "ROR data",
+            "page": "",
+            "title": "ROR Data"
+          },
+          "revision_id": 0,
+          "slug": "ror-data",
+          "updated": "2021-02-05T23:08:06.200107+00:00"
+        }
+      ],
+      "ids": [
+        "433f41f0-e824-4498-9ae9-87baadcc27c7"
+      ]
+    },
+    "id": "6347574",
+    "pids": {
+      "doi": {
+        "client": "datacite",
+        "identifier": "10.5281/zenodo.6347574",
+        "provider": "datacite"
+      }
+    }
+  },
+  "pids": {
+    "doi": {
+      "client": "datacite",
+      "identifier": "10.5281/zenodo.14728473",
+      "provider": "datacite"
+    },
+    "oai": {
+      "identifier": "oai:zenodo.org:14728473",
+      "provider": "oai"
+    }
+  },
+  "revision_id": 6,
+  "stats": {
+    "all_versions": {
+      "data_volume": 1180412219614.0,
+      "downloads": 30330,
+      "unique_downloads": 20343,
+      "unique_views": 33604,
+      "views": 38753
+    },
+    "this_version": {
+      "data_volume": 35806328166.0,
+      "downloads": 623,
+      "unique_downloads": 469,
+      "unique_views": 715,
+      "views": 785
+    }
+  },
+  "status": "published",
+  "swh": {},
+  "updated": "2025-01-27T19:05:01.270641+00:00",
+  "versions": {
+    "index": 47,
+    "is_latest": true,
+    "is_latest_draft": false
+  }
+}
