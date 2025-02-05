@@ -1,15 +1,20 @@
 # Zenodo CFF
 
-## Overview
-We want to create a proof-of-concept to make it easier for Zenodo users to populate new records with metadata such as:
+This project aims to reduce work needed by researchers depositing data into generalist repositories in order to supply rich metadata by allowing depositors to submit metadata in a text file along with their dataset rather than filling out a form.
 
-- ROR names and ROR IDs
-- Creators/contributors with ORCID iDs AND affiliations with ROR IDs
-- References (relationships to articles, software, etc)
-- License
-- Funding
+This approach utilizes [Citation File Format (CFF)](https://citation-file-format.github.io/), which is already used in the Zenodo/Github integration.
 
-We will create a Python script that imports a `.cff` file for the metadata and `.zip` for data if present.
+## Proposed workflow
+1. Researcher creates a CFF text file with rich metadata (authors/contributors with ORCID IDs, affiliations with ROR IDs, etc)
+2. Research incudes CFF file in the root of their datafile upload
+3. Repository automatically parses CFF and populates metadata fields.
+4. Repository registers DOI and sends corresponding metadata to DOI registration agency.
+
+## Advatages of this approach
+1. Text file can easily be created re-used by researchers, to avoid entering the same author, contributor, funding, etc data in repository upload forms for each data deposit.
+2. CFF format is independently maintained and tooling exists to create/validate CFF files.
+3. CFF format is repository-agnostic and could be implemented by multiple GREI respositories
+
 
 ## Notes
 - The current version of CFF doesn’t support ROR, but it looks like [ROR in affiliations is on dev](https://github.com/citation-file-format/citation-file-format/pull/523/files#diff-c691faae636a91cb28b95c3e0ff9b17c654b01dcf288a9a3b03d7624f06cd847) and will be supported soon(?) 
@@ -19,12 +24,15 @@ We will create a Python script that imports a `.cff` file for the metadata and `
     - CFF Contributor roles discussion: [Record contributor roles/contribution types](https://github.com/citation-file-format/citation-file-format/issues/112)
 
 ## To Do
+### Current Work
 - Create example CFF file for datasets with ideal metadata populated
     - ROR names and ROR IDs
     - Creators/contributors with ORCID iDs AND affiliations with ROR IDs
     - References (relationships to articles, software, etc)
     - License
 - Create Python script to import `.cff` file and .zip (if present)
+
+### Future Work
 - Add funding
 - Crosswalk CFF to Zenodo metadata JSON
     - Should already exist somewhere due to current Zenodo/Github integration
