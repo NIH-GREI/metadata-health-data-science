@@ -26,18 +26,15 @@ This approach utilizes [Citation File Format (CFF)](https://citation-file-format
 ## To Do
 ### Current Work
 - Create example CFF file for datasets with ideal metadata populated
-    - ROR names and ROR IDs
-    - Creators/contributors with ORCID iDs AND affiliations with ROR IDs
-    - References (relationships to articles, software, etc)
-    - License
+    - Authors with ORCID IDs and affiliations with ROR names and ROR IDs
+- Create crosswalk of CFF fields to Zenodo metadata JSON (based on existing Zenodo/Github crosswalk)
 - Create Python script to import `.cff` file and .zip (if present)
-
-### Future Work
-- Add funding
-- Crosswalk CFF to Zenodo metadata JSON
-    - Should already exist somewhere due to current Zenodo/Github integration
 - Script to create new Zenodo draft record from CFF via Zenodo API
-    - Just for proof of concepts - this would ideally be done automatically in the UI or via a CFF upload 
+    - Just for proof of concepts - this would ideally be done automatically in the UI or via a CFF upload
+    - 
+### Future Work
+- Enhance CFF file example with funding, references (relationships to articles, software, etc), contributors/roles, etc
+- Enhance CFF to Zenodo JSON crosswalk to include additional CFF fields
 
 ## Example from ROR Data Upload
 - [Zenodo record](https://zenodo.org/records/14728473)
