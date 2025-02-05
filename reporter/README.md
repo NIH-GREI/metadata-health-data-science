@@ -1,4 +1,4 @@
-# NIH RePORTER - DataCiteDOI Relationship Analysis
+# NIH RePORTER - DataCite DOI Relationship Analysis
 
 ## Data Flow Overview
 
