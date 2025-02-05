@@ -35,7 +35,7 @@ class ArgumentConfig:
     def __init__(self):
         self.input_dir = None
         self.output_dir = None
-        self.cache_dir = None
+        self.cache_dir = None 
         self.log_level = None
         self.all = False
         self.providers = []
@@ -43,6 +43,8 @@ class ArgumentConfig:
         self.sort_rtg_only = False
         self.sort_provider_client_rtg = False
         self.processes = None
+        self.from_file = None
+        self.doi_column = None
 
     @classmethod
     def parse_arguments(cls):
@@ -54,7 +56,7 @@ class ArgumentConfig:
                             help='Directory containing DataCite data files.')
         parser.add_argument('-o', '--output-dir', required=True,
                             help='Output directory for data.')
-        parser.add_argument('-c', '--cache-dir',
+        parser.add_argument('--cache-dir',
                             help='Directory for caching API responses (optional).')
         parser.add_argument('-l', '--log-level', default='INFO',
                             help='Logging level (INFO, DEBUG, etc.).')
@@ -68,6 +70,11 @@ class ArgumentConfig:
                                 help='Process only records for the given provider ID(s).')
         mode_group.add_argument('-r', '--clients', nargs='+',
                                 help='Process only records for the given repositories/client ID(s).')
+        mode_group.add_argument('-f', '--from-file',
+                                help='CSV file containing DOIs to filter by')
+
+        parser.add_argument('-d', '--doi-column',
+                            help='Column name in CSV containing DOIs (required with --from-file)')
 
         sort_group = parser.add_mutually_exclusive_group(required=False)
         sort_group.add_argument('-rtgo', '--sort-rtg-only', action='store_true',
@@ -77,24 +84,24 @@ class ArgumentConfig:
 
         args = parser.parse_args()
 
+        if args.from_file and not args.doi_column:
+            parser.error("--doi-column is required when using --from-file")
+
         config = cls()
         config.input_dir = args.input_dir
         config.output_dir = args.output_dir
         config.cache_dir = args.cache_dir
         config.log_level = args.log_level
+        config.processes = args.processes
 
         config.all = args.all
-        if args.providers:
-            config.providers = args.providers
-        if args.clients:
-            config.clients = args.clients
+        config.providers = args.providers if args.providers else []
+        config.clients = args.clients if args.clients else []
+        config.from_file = args.from_file
+        config.doi_column = args.doi_column
 
-        if args.sort_rtg_only:
-            config.sort_rtg_only = True
-        if args.sort_provider_client_and_rtg:
-            config.sort_provider_client_rtg = True
-
-        config.processes = args.processes
+        config.sort_rtg_only = args.sort_rtg_only
+        config.sort_provider_client_rtg = args.sort_provider_client_and_rtg
 
         return config
 
@@ -438,6 +445,36 @@ class BatchGzipReader:
             self.logger.error(f"Error reading gzip file {self.filepath}: {str(e)}")
 
 
+class DOIFilter:
+    def __init__(self, csv_path, column_name):
+        self.dois = set()
+        self._load_dois(csv_path, column_name)
+
+    def _load_dois(self, csv_path, column_name):
+        import csv
+        try:
+            with open(csv_path, 'r') as f:
+                reader = csv.DictReader(f)
+                if column_name not in reader.fieldnames:
+                    raise ValueError(f"Column '{column_name}' not found in CSV")
+                
+                for row in reader:
+                    doi = row[column_name].strip()
+                    if doi:
+                        self.dois.add(doi.lower())
+        except FileNotFoundError:
+            raise FileNotFoundError(f"CSV file not found: {csv_path}")
+        except Exception as e:
+            raise ValueError(f"Error loading CSV: {str(e)}")
+
+    def should_keep(self, record):
+        try:
+            doi = record.get('attributes', {}).get('doi', '').lower()
+            return doi in self.dois
+        except:
+            return False
+
+
 class FileProcessor:
     def __init__(self, file_writer, config, counter=None, lock=None, total_files=None):
         self.file_writer = file_writer
@@ -446,6 +483,9 @@ class FileProcessor:
         self._lock = lock
         self._total_files = total_files
         self.logger = logging.getLogger('datacite.file_processor')
+        self.doi_filter = None
+        if config.from_file:
+            self.doi_filter = DOIFilter(config.from_file, config.doi_column)
 
     def log_progress(self, message):
         if self._lock:
@@ -461,7 +501,7 @@ class FileProcessor:
             return provider_id in self.config.providers
         elif self.config.clients:
             return client_id in self.config.clients
-        return False
+        return True
 
     def process_file(self, filepath):
         try:
@@ -470,8 +510,11 @@ class FileProcessor:
             reader = BatchGzipReader(filepath)
 
             for item in reader:
-                # Always skip if state != 'findable'
                 if item.get('attributes', {}).get('state') != 'findable':
+                    skipped_count += 1
+                    continue
+
+                if self.doi_filter and not self.doi_filter.should_keep(item):
                     skipped_count += 1
                     continue
 
@@ -631,11 +674,8 @@ class DataCiteDataFileProcessor:
             if not directory_manager.setup_base_directory():
                 self.logger.error("Failed to create base output directory.")
                 return 1
-
-            # If doing rtg-only, skip all provider/client lookups
-            # because we do not filter or store provider/client metadata
-            # in that scenario
-            fetch_providers_and_clients = not config.sort_rtg_only
+                
+            fetch_providers_and_clients = not (config.sort_rtg_only or config.from_file)
 
             if fetch_providers_and_clients:
                 api_client = DataCiteAPIClient(cache_dir=config.cache_dir)
@@ -706,6 +746,9 @@ class DataCiteDataFileProcessor:
             if total_files == 0:
                 self.logger.error(f"No suitable .jsonl.gz or .json.lz files found in {config.input_dir}")
                 return 1
+
+            if config.from_file:
+                self.logger.info(f"Running in DOI filter mode using CSV: {config.from_file}")
 
             self.logger.info(f"Found {total_files} files to process.")
 
