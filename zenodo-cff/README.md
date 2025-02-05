@@ -9,16 +9,18 @@
 
 ## To Do
 ### Current Work
-- [ ] Create example CFF file for datasets with ideal metadata populated
-- [ ] Creators/contributors with ORCID iDs AND affiliations with ROR IDs
-- [ ] References (relationships to articles, software, etc)
-- [ ] License
+- Create example CFF file for datasets with ideal metadata populated
+    - ROR names and ROR IDs
+    - Creators/contributors with ORCID iDs AND affiliations with ROR IDs
+    - References (relationships to articles, software, etc)
+    - License
+- Create Python script to import `.cff` file and .zip (if present)
 
 ### Future Work
-- [ ] Funding
-- [ ] Crosswalk CFF to Zenodo metadata JSON
+- Add funding
+- Crosswalk CFF to Zenodo metadata JSON
     - Should already exist somewhere due to current Zenodo/Github integration
-- [ ] Script to create new Zenodo draft record from CFF via Zenodo API
+- Script to create new Zenodo draft record from CFF via Zenodo API
     - Just for proof of concepts - this would ideally be done automatically in the UI or via a CFF upload 
 
 ## Example from ROR Data Upload
