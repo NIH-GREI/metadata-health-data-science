@@ -10,10 +10,15 @@ This approach utilizes [Citation File Format (CFF)](https://citation-file-format
 3. Repository automatically parses CFF and populates metadata fields.
 4. Repository registers DOI and sends corresponding metadata to DOI registration agency.
 
-## Advatages of this approach
+## Advantages of this approach
 1. Text file can easily be created re-used by researchers, to avoid entering the same author, contributor, funding, etc data in repository upload forms for each data deposit.
 2. CFF format is independently maintained and tooling exists to create/validate CFF files.
 3. CFF format is repository-agnostic and could be implemented by multiple GREI respositories
+
+## Key learnings/takeaways
+- CFF is actively evolving in alignment with key DataCite metadata fields (affiliations/ROR, contributors, funding)
+- CFF release cycle is a bit slow, which could present challenges - is there work we can do here?
+- There are some bugs in the Zenodo API that could present challenges (ORCID IDs disappearing)
 
 
 ## Notes
